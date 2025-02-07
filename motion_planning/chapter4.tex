@@ -1,0 +1,167 @@
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+
+\newcommand{\handout}[5]{
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { {\bf CSCE 643 } \hfill #2 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { {\em #3 \hfill #4} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+\newcommand{\topic}[4]{\handout{#1}{#2}{#3}{Scribe: #4}{Topic #1}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+\begin{document}
+
+\topic{1 -- The Configuration Space}{Feburary 6th, 2025}{Prof. \ Dylan Shell / Dr. Steven Lavelle}{David Zhang}
+
+
+
+\section{Overview}
+
+\begin{definition}
+  \textbf{Configuration Space: }The state space for motion planning is a set of possible transformations that could be applied to the robot
+\end{definition}
+
+\section{Basic Topological Concepts}
+
+\subsection{Topological Spaces}
+
+\begin{definition}
+  \textbf{An open set is } a interval with no boundary points. That must follow this rule (TLDR) 
+\end{definition}
+
+\begin{definition}
+  \textbf{A topological space} is a set $\mathbb{X}$ together with a collection of open sets $O$ that satisfy the following properties:
+  \begin{enumerate}
+    \item The union of any number of open sets is an open set.
+    \item The intersection of a finite number of open sets is an open set
+    \item Both $\mathbb{X}$ and $\emptyset$ are open sets
+  \end{enumerate}
+\end{definition}
+
+\begin{definition}
+ \textbf{Special Points: } A point on the border of an open or closed set
+\end{definition}
+
+\subsubsection{Special Point scenarios}
+Consider a point $x$ that in the topological space $\mathbb{X}$, and a set $U$ that is a subset of $X$. The following terms
+capture the position of point $x$ relative to U.
+\begin{enumerate}
+  \item If $x$ is in $U$, then $x$ is an interior point of $U$
+  \item If $x$ is not in $U$, then $x$ is an exterior point of $U$
+  \item If $x$ is neither an interior point nor an exterior point of $U$, then $x$ is a boundary point of $U$
+  \item If $x$ is an interior or boundary point, it is a limit point (which the set of all limit points of $U$ 
+  is called the closure of $U$)
+\end{enumerate}
+
+\em Important Note: The closure is always a closed set, because it contains all the boundary points. That also means
+the open set contains none of the boundary points, making it open.
+
+\subsection{The Ball analogy (Example 4.1)}
+Think of an open set as a ball in $\mathbb{R}^n$ space, and the points that fill the ball are the interior points
+centered at some point $x$.
+
+\begin{enumerate}
+  \item All open sets can be represented by a countable union of open balls
+  \item Any function constructed from primitives that use the $<$ relation are open.
+\end{enumerate}
+
+\subsection{Subspace Topology}
+The subspace topology is a topology that have all of its representative open sets be every subset to a larger 
+topological space. $U \subseteq \mathbb{X}$
+
+\subsubsection{Blah blah blah}
+Here is a subsubsection. You can use these as well.
+
+\subsection{Using Boldface}
+Make sure to use lots of boldface.
+
+\paragraph{Question:}
+How would you use boldface?
+
+\paragraph{Example:}
+This is an example showing how to use boldface to 
+help organize your topics.
+
+
+\paragraph{Some Formatting.}
+Here is some formatting that you can use in your notes:
+\begin{itemize}
+\item {\em Item One} -- This is the first item.
+\item {\em Item Two} -- This is the second item.
+\item \dots and here are other items.
+\end{itemize}
+
+If you need to number things, you can use this style:
+\begin{enumerate}
+\item {\em Item One} -- Again, this is the first item.
+\item {\em Item Two} -- Again, this is the second item.
+\item \dots and here are other items.
+\end{enumerate}
+
+\paragraph{Bibliography.}
+Please give real bibliographical citations for the papers that we
+mention in class. See below for how to include a bibliography section.
+If you use BibTeX, integrate the .bbl file into your .tex
+source. You should reference papers like this: ``The FKS
+dictionary originates in a paper by Fredman, Koml\'{o}s and
+Szemer\'{e}di \cite{fks}.'' In general, the name of the authors should
+appear in text at most once (for the first citation); further
+citations look like: ``Our proof follows that of \cite{fks}''.
+
+Take a look at previous topics (TeX files are available) to see the
+details. A excellent source for bibliographical citations is
+DBLP. Just Google DBLP and an author's name.
+
+
+%\bibliography{mybib}
+\bibliographystyle{alpha}
+
+\begin{thebibliography}{77}
+
+\bibitem{fks}
+M. Fredman, J. Koml\'{o}s, E. Szemer\'{e}di,
+\emph{Storing a Sparse Table with $O(1)$ Worst Case Access Time},
+Journal of the ACM, 31(3):538-544, 1984.
+
+\end{thebibliography}
+
+\end{document}

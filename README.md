@@ -2,9 +2,9 @@ The goal is to get smarter. My notes serve to find showcase how much I've learne
 
 Reading List:
 
-Motion Planning by Steven Lavelle (finish by the semester)
-Practical Vim
-Numerical Methods 
-Physically Based Rendering
+* Motion Planning by Steven Lavelle (finish by the semester)
+* Practical Vim
+* Numerical Methods 
+* Physically Based Rendering
 
 The goal is to go slow and steady.

@@ -108,34 +108,141 @@ centered at some point $x$.
 The subspace topology is a topology that have all of its representative open sets be every subset to a larger 
 topological space. $U \subseteq \mathbb{X}$
 
-\subsubsection{Blah blah blah}
-Here is a subsubsection. You can use these as well.
+\begin{definition}
+  \textbf{Hausdorff axiom:} For any distinct points $x_1$ and $x_2 \subseteq X$, there exists open sets
+  $O_1$ and $O_2$ such that $x_1 \in O_1$ and $x_2 \in O_2$ and $O_1 \cap O_2 = \emptyset$
+\end{definition}
 
-\subsection{Using Boldface}
-Make sure to use lots of boldface.
+In other words, points can be separated into distinct non-overlapping subsets.
 
-\paragraph{Question:}
-How would you use boldface?
+\begin{definition}
+  \textbf{Homeomorphism:} A function $f: \mathbb{X} \rightarrow \mathbb{Y}$ is a homeomorphism if it is bijective, and
+  the function and its inverse are both continuous. Two topological spaces $X$ and $Y$
+  
+  If two topological spaces $X$ and $Y$ are homeomorphic, then they are topologically equivalent, which means there exists a homeomorphism between them.
+  This property is reflexive, symmetric, and transitive.
 
-\paragraph{Example:}
-This is an example showing how to use boldface to 
-help organize your topics.
+\end{definition}
+\begin{definition}
+  A topological space is bounded if there exists a ball $B \subset \mathbb{R}^n$ if there exists a ball
+  $B \subset \mathbb{R}^n$ such that $X \subset B$. 
+
+\end{definition}
+\begin{fact}
+  The mapping $x \rightarrow \frac{1}{x}$ makes two open sets $(0, 1)$ and $(1, \infty)$ homeomorphic.  
+\end{fact}
+
+\begin{definition}
+  \textbf{Topological Graph:} A graph for which every vertex corresponds to a point in $X$ and every edge corresponds
+  to a continuous, injective function from $\tau : [0, 1]$ to $X$.
+\end{definition}
+
+\begin{definition}
+  Two graphs are \textbf{isomorphic} if there exists a bijective mapping, $f: V_1 \rightarrow V_2$ such that there 
+  is an edge between $v_1$ and $v_2$ if and only if there is an edge between $f(v_1)$ and $f(v_2)$ in the second graph.
+\end{definition}
+
+% Insert isomorphic_graph.png here
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.35\textwidth]{isomorphic_graph.png}
+  \caption{Isomorphic Graph Example}
+\end{figure}
 
 
-\paragraph{Some Formatting.}
-Here is some formatting that you can use in your notes:
-\begin{itemize}
-\item {\em Item One} -- This is the first item.
-\item {\em Item Two} -- This is the second item.
-\item \dots and here are other items.
-\end{itemize}
 
-If you need to number things, you can use this style:
-\begin{enumerate}
-\item {\em Item One} -- Again, this is the first item.
-\item {\em Item Two} -- Again, this is the second item.
-\item \dots and here are other items.
-\end{enumerate}
+\subsection{Manifolds}
+
+\begin{definition}
+  \textbf{Manifold:} A topological space $M \subseteq \mathbb{R}^m$ is a manifold if for 
+  every point $x \in M$, there exists an open set $O \subset M$ such that $O$ is homeomorphic to an open set in $\mathbb{R}^n$.
+   $x \in O$ and $O$ is homeomorphic to an open set in $\mathbb{R}^n$. $n$ is the dimension of the manifold.
+
+  In simple terms, it behaves at every point like our intuitive notions of a surface.
+\end{definition}
+
+\begin{corollary}
+  This naturally leads to $m \geq n$ leading to whitney's embedding theorem. 
+\end{corollary}
+
+\section{What is a manifold?}
+
+A topological space that is "understood" is a manifold. 
+\begin{observation}
+  $S^1$ is a circle.
+  \begin{itemize}
+    \item The circle can be stretched and deformed, into a square, so they are topologically equivalent
+    \item As long as we don't cut or pinch the circle, they are equivalent (homeomorphic)
+  \end{itemize}
+  $S^2$ is a sphere.
+  \begin{itemize}
+    \item A sphere lives in 3-D Space
+    \item $S^2$ is embedded in topological 3D space
+  \end{itemize}
+
+  Note: A torus is not topologically equivalent to a sphere, because it has a hole in it.
+\end{observation}
+
+\begin{definition}
+  \textbf{Charts:} A chart is a cover of a topological space that gives coordinates to the space.
+  They map a part of the manifold that to $\mathbb{R}^d$.
+\end{definition}
+
+Consider the earth as a manifold, the set of all locations on the earth. Of which we can problem sections of the earth
+as maps. And collections of these maps are called atlases. The maps are 2D images of the manifold to represent a
+3D space. The altas may have portions of the map that overlap. 
+
+\begin{definition}
+  $\mathbb{S}^1 = \{x \in \mathbb{R}^2 | x_1^2 + x_2^2 = 1\}$ \\ 
+  It is a circle.
+\end{definition}
+
+\subsubsection{Identification in manifolds}
+\begin{definition}
+  \textbf{Identification:} A general method of declaring that some points of a space are identical even though they originally were 
+  distinct.
+\end{definition}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{2D_manifolds.png}
+  \caption{Identification Example}
+\end{figure}
+
+The figures showcase sections of a manifold and their identification.
+Arrows represent the mapping of the points. For example, for the cylinder, the top and the bottom are linked together
+mapping $(0, y) ~ (1, y)$.
+
+\subsection{Paths and Connectivity}
+We essentially want to \textbf{connect one part of space to another part of space}, and we can do this by utilizing a 
+sequence of actions. Graphs are for discrete spaces, and topological spaces are for continuous spaces.
+
+\begin{definition}
+  \textbf{Path:} A path is a continuous function from $\tau : [0, 1] \rightarrow X$.
+  $\tau = x(s)$ where $x$ is the path and $s$ is the state index in the path.
+\end{definition}
+
+\begin{definition}
+  \textbf{Connected Space:} A space is connected if there is a path or a union of two disjoint, nonempty, open sets.
+\end{definition}
+\begin{definition}
+  \textbf{Homotopic Paths:} Two paths are homotopic if there exists a continuous function $h: [0, 1] \times [0, 1] \rightarrow X$
+  such that the paths deformed into the other. There cannot be a discontinuous jump between the paths.
+\end{definition}
+
+This also leads into algebraic topology, which is mainly characterized by groups
+
+\begin{definition}
+  \textbf{A group} is defined by the 4 properties:
+  \begin{enumerate}
+    \item Closure - multiplication / binary operations are closed within the group
+    \item Associativity - $(a \cdot b) \cdot c = a \cdot (b \cdot c)$
+    \item Identity - There exists an identity element $e$ such that $a \cdot e = e \cdot a = a$
+    \item Inverse - For every element $a$, there exists an inverse $a^{-1}$ such that $a \cdot a^{-1} = a^{-1} \cdot a = e$
+  \end{enumerate}
+\end{definition}
+
+% TODO: Add more details from The Fundamental Group
 
 \paragraph{Bibliography.}
 Please give real bibliographical citations for the papers that we

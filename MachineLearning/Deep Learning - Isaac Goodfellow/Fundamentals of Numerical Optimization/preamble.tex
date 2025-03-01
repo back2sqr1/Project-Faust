@@ -1,0 +1,231 @@
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\hw}[3]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf CSCE 653: Computational Methods for Data Science} \hfill  }
+				\vspace{2mm}
+				\hbox to 5.78in { {\Large \hfill Homework #1\hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\it Due date: #2 \hfil Name: #3} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+%Problems, Answers and Solutions
+\newcounter{prob}
+\setcounter{prob}{-1}
+\newcommand{\problem}{\stepcounter{prob}{\noindent\textbf{Problem \theprob.}}\ }
+\newcommand{\answer}{\medskip{\color{red} \textbf{Answer to Problem \theprob.}}\ }
+\newcommand{\solution}{\medskip{\color{blue} \textbf{Solution to Problem \theprob.}}\ }
+
+%New commands
+\def\ds{\displaystyle}
+\def\ra{\rightarrow}
+%\def\bf{\textbf}
+\usepackage{enumerate}
+\newcommand{\babc}{\begin{enumerate}[a)]} %Use with \item for abc lists
+\newcommand{\eabc}{\end{enumerate}}
+
+
+% For hyperlinking everything
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=all,     %set to all if you want both sections and subsections linked
+	linkcolor=blue,  %choose some color if you want links to stand out
+}
+
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathrsfs}  
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{algorithm}
+%\usepackage{algcompatible}
+%\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+%\usepackage{enumitem}
+\usepackage{color}
+\usepackage{titlesec}
+\titleformat{\section}{\fontfamily{lmss}\fontsize{14}{15}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\fontfamily{lmss}\fontsize{12}{15}\bfseries}{\thesubsection}{1em}{}
+
+\usepackage{amsthm}
+
+\newtheoremstyle{noit}
+{10pt}% <Space above>
+{10pt}% <Space below>
+{}% <Body font>
+{}% <Indent amount>
+{\bfseries}% <Theorem head font>
+{.}% <Punctuation after theorem head>
+{.5em}% <Space after theorem headi>
+{}% <Theorem head spec (can be left empty, meaning `normal')>
+
+\newtheoremstyle{example}
+{10pt}% <Space above>
+{10pt}% <Space below>
+{}% <Body font>
+{20pt}% <Indent amount>
+{\bfseries}% <Theorem head font>
+{.}% <Punctuation after theorem head>
+{.5em}% <Space after theorem headi>
+{}% <Theorem head spec (can be left empty, meaning `normal')>
+
+
+\newtheoremstyle{indented}{20pt}{20pt}{\addtolength{\leftskip}{2.5em}}{}{\bfseries}{.}{.5em}{}
+
+%\theoremstyle{indented}
+\newtheorem{claim}{Claim}
+\newtheorem{theorem}{Theorem}
+\numberwithin{theorem}{section}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{observation}{Observation}
+%\numberwithin{observation}{section}
+%\numberwithin{definition}{section}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{Qu}{Question}
+\newcommand{\QU}{\begin{Qu}\normalfont}
+	
+	\newtheorem{definition}{Definition}
+	
+	\theoremstyle{noit}
+	\newtheorem{fact}{Fact}
+	
+	%\theoremstyle{indented}
+	
+	
+	\theoremstyle{indented}
+	\newtheorem{example}{Example}
+	
+	\theoremstyle{indented}
+	%\newtheorem{problem}{Problem}
+	
+	
+	\newcommand{\vs}[1]{\vspace{#1}}
+	
+	\newcommand{\lecture}[1]{
+		\noindent
+		\begin{center}
+			\framebox{
+				\vbox{
+					\hbox to 5.78in { {\bf CSCE 653: Computational Methods for Data Science} \hfill  }
+					\vspace{2mm}
+					\hbox to 5.78in { {\Large \hfill Lecture #1\hfill} }
+					\vspace{2mm}
+					\hbox to 5.78in { {Texas A\&M University \it  \hfill Lecturer: Nate Veldt} }
+				}
+			}
+		\end{center}
+		\vspace*{4mm}
+	}
+	
+	
+	\newcommand{\under}[1]{\underline{\hspace{#1}}}
+	\setlength{\parindent}{0em}
+	
+	\newcommand\norm[1]{\left\lVert#1\right\rVert}
+	\newcommand\normx[1]{\left\Vert#1\right\Vert}
+	
+	% Graph terms
+	\newcommand{\vol}{\textbf{vol}}
+	\newcommand{\cut}{\textbf{cut}}
+	%\newcommand{\span}{\textbf{span}}
+	
+	% Matrices
+	\newcommand{\mL}{\textbf{L}}
+	\newcommand{\mR}{\textbf{R}}
+	\newcommand{\mA}{\textbf{A}}
+	\newcommand{\mB}{\textbf{B}}
+	\newcommand{\mC}{\textbf{C}}
+	\newcommand{\mM}{\textbf{M}}
+	\newcommand{\mP}{\textbf{P}}
+	\newcommand{\mZ}{\textbf{Z}}
+	\newcommand{\mY}{\textbf{Y}}
+	\newcommand{\mX}{\textbf{X}}
+	\newcommand{\mI}{\textbf{I}}
+	\newcommand{\mH}{\textbf{H}}
+	\newcommand{\mW}{\textbf{W}}
+	\newcommand{\mV}{\textbf{V}}
+	\newcommand{\mU}{\textbf{U}}
+	\newcommand{\mQ}{\textbf{Q}}
+	% vectors
+	
+	\DeclareMathOperator*{\argmax}{argmax}
+	\DeclareMathOperator*{\argmin}{argmin}
+	
+	\newcommand{\blue}[1]{{\color{blue} #1 }}
+	\newcommand{\va}{\textbf{a}}
+	\newcommand{\vb}{\textbf{b}}
+	\newcommand{\vc}{\textbf{c}}
+	\newcommand{\vd}{\textbf{d}}
+	\newcommand{\ve}{\textbf{e}}
+	\newcommand{\vh}{\textbf{h}}
+	\newcommand{\vw}{\textbf{w}}
+	\newcommand{\vl}{\textbf{l}}
+	\newcommand{\vp}{\textbf{p}}
+	\newcommand{\vq}{\textbf{q}}
+	\newcommand{\vr}{\textbf{r}}
+	\newcommand{\vu}{\textbf{u}}
+	\newcommand{\vv}{\textbf{v}}
+	\newcommand{\vx}{\textbf{x}}
+	\newcommand{\vy}{\textbf{y}}
+	\newcommand{\vz}{\textbf{z}}
+	\newcommand{\zvec}{\textbf{0}}
+	% Other
+	\newcommand{\calN}{\mathcal{N}}
+	\newcommand{\tr}{\text{tr}}
+	\usepackage{mathtools}
+	\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+	\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+	\DeclareMathOperator{\EX}{\mathbb{E}}% expected value
+
+	
+	\newcommand{\note}[1]{{\color{blue} [ #1 ]}}
+	\newcommand{\hide}[1]{\underline{\phantom{#1 #1}}}
+	
+	\newcommand{\R}{\mathbb{R}}
+	\newcommand{\Rn}{\mathbb{R}^n}
+	\newcommand{\Rnn}{\mathbb{R}^{n \times n}}
+	\usepackage{setspace}
+
+\usepackage[T1]{fontenc}
+\usepackage{beramono}
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+%%
+%% Julia definition (c) 2014 Jubobs
+%%
+\lstdefinelanguage{Julia}%
+  {morekeywords={abstract,break,case,catch,const,continue,do,else,elseif,%
+      end,export,false,for,function,immutable,import,importall,if,in,%
+      macro,module,otherwise,quote,return,switch,true,try,type,typealias,%
+      using,while},%
+   sensitive=true,%
+   alsoother={$},%
+   morecomment=[l]\#,%
+   morecomment=[n]{\#=}{=\#},%
+   morestring=[s]{"}{"},%
+   morestring=[m]{'}{'},%
+}[keywords,comments,strings]%
+
+\lstset{%
+    language         = Julia,
+    basicstyle       = \ttfamily,
+    keywordstyle     = \bfseries\color{blue},
+    stringstyle      = \color{magenta},
+    commentstyle     = \color{ForestGreen},
+    showstringspaces = false,
+}

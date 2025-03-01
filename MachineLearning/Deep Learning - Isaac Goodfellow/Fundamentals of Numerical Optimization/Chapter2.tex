@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+
+\input{preamble.tex}
+
+\newcommand{\handout}[5]{
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { {\bf Machine Learning Refined } \hfill #2 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { {\em #3 \hfill #4} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+\newcommand{\topic}[4]{\handout{#1}{#2}{#3}{Scribe: #4}{Topic: #1}}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+\begin{document}
+
+\topic{Fundamentals of Numerical Optimization --- 3/1 2025}{Spring 2025}{FAUST}{David Zhang}
+
+\section{Overview}
+
+Main discussion points
+\begin{itemize}
+  \item Gradient Descent 
+  \item Newton's Method
+\end{itemize}
+
+\subsection{Calculus-defined Optimality: }
+
+\begin{definition} Linear approximation of a function $g$ at a point $v$ is defined as:
+  $$h(w) = g(v) + g'(v)(w - v)$$
+\end{definition}
+
+where g(v) is the function tangent at v which also contains first derivative information. 
+
+\begin{definition} The quadratic approximation of a function $g$ at a point $v$ is defined as:
+  $$h(w) = g(v) + g'(v)(w - v) + \frac{1}{2}(w - v)^Tg''(v)(w - v)$$
+\end{definition}
+
+In general we write the linear approximatino as 
+
+$$h(\textbf{w}) = g(\textbf{v}) + \nabla g(\textbf{v})^T(\textbf{w} - \textbf{v})$$
+where $\nabla g(\textbf{v})$ is the gradient of $g$ at $\textbf{v}$.
+$$\nabla g(\textbf{v}) = \begin{bmatrix}
+  \frac{\partial g}{\partial w_1}(\textbf{v}) \\
+  \vdots \\
+  \frac{\partial g}{\partial w_d}(\textbf{v})
+\end{bmatrix}$$
+
+Finding a minimum would be when $\nabla g(\textbf{v}) = \zvec_{N \times 1}$.
+These are also called stationary points.
+
+Ideally we would want the function to be convex, so that we can find the global minimum.
+
+In $N$ dimensions, the quadratic funciton in $\textbf{w}$ is defined as:
+$$h(\textbf{w}) = \frac{1}{2}\textbf{w}^T\textbf{Qw} + \textbf{r}^T\textbf{w} + d$$.
+
+\subsection{Numerical Methods for Optimization}
+
+$$\textbf{w}^* = \argmin_w g(w)$$
+
+All numerical optimization schemes for minimization work as follows:
+\begin{itemize}
+  \item Start at some initial point $\textbf{w}^{(0)}$
+  \item Update the point iteratively
+  \item Stop when some stopping criterion is met
+\end{itemize}
+
+\definition{Stopping Condition}
+\begin{itemize}
+  \item When a pre-specified number of iterations are complete
+  \item When the gradient is small enough within an epsilon threshold
+\end{itemize}
+
+\subsection{Gradient Descent}
+
+From the first order Taylor Series Approximation centered at $\textbf{w}^{0}$:
+$$h(\textbf{w}) \approx g(\textbf{w}^{(0)}) + \nabla g(\textbf{w}^{(0)})^T(\textbf{w} - \textbf{w}^{(0)})$$
+
+Through simple calculus, the steepest descent direction is given as 
+$$\textbf{w}^k = \textbf{w}^{k-1}-\nabla_k g(\textbf{w}^{k-1})$$
+
+\subsection{Newton's Method}
+
+Newton's method is a second order optimization method. The idea is to use the second order Taylor Series Approximation centered at $\textbf{w}^{(0)}$:
+$$h(\textbf{w}) \approx g(\textbf{w}^{(0)}) + \nabla g(\textbf{w}^{(0)})^T(\textbf{w} - \textbf{w}^{(0)}) + \frac{1}{2}(\textbf{w} - \textbf{w}^{(0)})^T\textbf{Q}(\textbf{w} - \textbf{w}^{(0)})$$
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{NewtonsMethod.png}
+\caption{Newton's method illustration}
+\label{fig:newtons-method}
+\end{figure}
+
+Newton's method is often more efficient, but is constrained by the fact that the Hessian matrix must be positive definite.
+
+To do this we can use the first order condition by setting the gradient of h to zero and solving for w. This gives the $N \times N$ system
+of linear equations
+
+$$\nabla^2g(\textbf{w}^0)\textbf{w} = \nabla^2g(\textbf{w}^0)\textbf{w}^0 - \nabla(\textbf{w}^0)$$
+
+\begin{algorithm}
+\caption{Newton's Method}
+\begin{algorithmic}
+\State Initialize $\mathbf{w}^{(0)}$
+\For{$k=1,2,\ldots$ until convergence}
+  \State $\mathbf{w}^{(k)} \leftarrow \mathbf{w}^{(k-1)} 
+  - \nabla^2 g\big(\mathbf{w}^{(k-1)}\big)^{-1}\,\nabla g\big(\mathbf{w}^{(k-1)}\big)$
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\begin{definition}
+  $\nabla^2 g(\textbf{w}) = \frac{1}{2}(\mQ + \mQ^T)$
+\end{definition}
+
+Where the LHS is the Hessian of the matrix.
+%\bibliography{mybib}
+\bibliographystyle{alpha}
+
+\begin{thebibliography}{77}
+
+\bibitem{fks}
+Jeremy Watt\'{o}s, Reza Borhani\'{e} Aggelos K. Katsaggelos,
+\emph{Machine Learning Refined: Foundations, Algorithms, and Applications},
+Northwestern University.
+
+\end{thebibliography}
+
+\end{document}

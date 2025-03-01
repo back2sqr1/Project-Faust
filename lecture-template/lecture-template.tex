@@ -6,12 +6,14 @@
 \usepackage{epsfig}
 \usepackage{graphicx}
 
+\input{preamble.tex}
+
 \newcommand{\handout}[5]{
   \noindent
   \begin{center}
   \framebox{
     \vbox{
-      \hbox to 5.78in { {\bf 6.841: Advanced Complexity Theory } \hfill #2 }
+      \hbox to 5.78in { {\bf Machine Learning Refined } \hfill #2 }
       \vspace{4mm}
       \hbox to 5.78in { {\Large \hfill #5  \hfill} }
       \vspace{2mm}
@@ -22,16 +24,7 @@
   \vspace*{4mm}
 }
 
-\newcommand{\topic}[4]{\handout{#1}{#2}{#3}{Scribe: #4}{topic #1}}
-
-\newtheorem{theorem}{Theorem}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{observation}[theorem]{Observation}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{claim}[theorem]{Claim}
-\newtheorem{fact}[theorem]{Fact}
+\newcommand{\topic}[4]{\handout{#1}{#2}{#3}{Scribe: #4}{Topic: #1}}
 \newtheorem{assumption}[theorem]{Assumption}
 
 % 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
@@ -50,13 +43,20 @@
 
 \begin{document}
 
-\topic{NUMBER --- DATE, 2012}{Fall 2012}{Prof.\ Dana Moshkovitz}{YOUR NAME}
+\topic{Introduction --- 2/28 2025}{Spring 2025}{FAUST}{David Zhang}
 
 \section{Overview}
 
-In the last topic we \ldots.
+There are four main categories of concepts in the book. 
+\begin{itemize}
+  \item Predictive learning: The goal is to predict a continuous and valued phenomenon (this can also be a form of distinguishing of different objects)
+  \item Feature Design: Using tools and techniques to make more successful predictive models
+  \item Function approximation: The goal is to approximate a function that is not known (implying there is little to learn from the proper features themselves)
+  \item Numerical Optimization - powering the first three and makes machine learning run
+\end{itemize}
 
-In this topic we \ldots.
+\subsection{Toy Example: Cats and Dogs} 
+\problem{Sample Title}{This is a sample problem. Add more details here.}{1}
 
 \section{Main Section}
 

@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+
+\input{preamble.tex}
+
+\newcommand{\handout}[5]{
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { {\bf Machine Learning Refined } \hfill #2 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { {\em #3 \hfill #4} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+\newcommand{\topic}[4]{\handout{#1}{#2}{#3}{Scribe: #4}{Topic: #1}}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+\begin{document}
+
+\topic{Introduction --- 2/28 2025}{Spring 2025}{FAUST}{David Zhang}
+
+\section{Overview}
+
+There are four main categories of concepts in the book. 
+\begin{itemize}
+  \item Predictive learning: The goal is to predict a continuous and valued phenomenon (this can also be a form of distinguishing of different objects)
+  \item Feature Design: Using tools and techniques to make more successful predictive models
+  \item Function approximation: The goal is to approximate a function that is not known (implying there is little to learn from the proper features themselves)
+  \item Numerical Optimization - powering the first three and makes machine learning run
+\end{itemize}
+
+\subsection{Toy Example: Cats and Dogs} 
+\problem{What is the goal and solution of the Cats and Dogs problem?} 
+
+
+\answer{The goal is to be able to correctly distinguish between cats and dogs given new pictures and new samples of data.} 
+
+\solution{Find features that differentiate between cats and dogs (numerical) and divide them with a line}
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{cats_and_dogs.png}
+  \caption{An example of cats and dogs}
+\end{figure}
+
+\subsection{Classication: }
+
+Similar to regression, the key difference between the two is instead of prediction of a continuous valued output
+classification aims to predict values to take on discrete values or classes.
+
+%\bibliography{mybib}
+\bibliographystyle{alpha}
+
+\begin{thebibliography}{77}
+
+\bibitem{fks}
+Jeremy Watt\'{o}s, Reza Borhani\'{e} Aggelos K. Katsaggelos,
+\emph{Machine Learning Refined: Foundations, Algorithms, and Applications},
+Northwestern University.
+
+\end{thebibliography}
+
+\end{document}

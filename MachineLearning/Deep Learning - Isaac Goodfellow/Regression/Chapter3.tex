@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+
+\input{preamble.tex}
+
+\newcommand{\handout}[5]{
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { {\bf Machine Learning Refined } \hfill #2 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { {\em #3 \hfill #4} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+\newcommand{\topic}[4]{\handout{#1}{#2}{#3}{Scribe: #4}{Topic: #1}}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+\begin{document}
+
+\topic{Regression --- 3/1 2025}{Spring 2025}{FAUST}{David Zhang}
+
+\section{Overview}
+
+In general, we aim to fit a line (or hyperplane in higher dimensions) to a scattering of data.
+
+
+\subsection{Notation and Modeling }
+
+Data for regression problems goes in the form of $\{(\textbf{x}_1, y_1), \ldots, (\textbf{x}_N, y_N)\}$ where $\textbf{x}_i \in \mathbb{R}^d$ and $y_i \in \mathbb{R}$.
+
+Each input in $\textbf{x}$ may be a column vector of length $N$.
+
+Formally, the goal of regression is the following formula:
+
+\begin{equation}
+    \argmin_{b, w} \sum_{p=1}^{N} (y_i - \textbf{w}^T \textbf{x}_i - b)^2
+\end{equation}
+
+where $\textbf{w} \in \mathbb{R}^d$ is the weight vector and $b \in \mathbb{R}$ is the bias term.
+
+The gradient of this cost after some chain rule:
+
+\begin{equation}
+    \nabla g(w) = 2 \left(\sum_{p=1}^{N} x_p x_p^T\right)w - 2 \sum_{p=1}^{N} x_p y_p
+\end{equation}
+
+Setting the gradient above to zero and solving for w gives the system of linear equations
+
+\begin{equation}
+    \left(\sum_{p=1}^{N} x_p x_p^T\right)w = \sum_{p=1}^{N} x_p y_p
+\end{equation}
+
+\begin{equation}
+  w^* = \left(\sum_{p=1}^{N} x_p x_p^T\right)^{-1} \sum_{p=1}^{N} x_p y_p
+\end{equation}
+
+\subsection{Efficacy of the Model}
+
+The efficacy of the model can be measured by the mean squared error (MSE) of the model:
+
+\begin{equation}
+    \frac{1}{N} \sum_{p=1}^{N} (y_p - w^T x_p)^2
+\end{equation}
+
+%\bibliography{mybib}
+\bibliographystyle{alpha}
+
+\begin{thebibliography}{77}
+
+\bibitem{fks}
+Jeremy Watt\'{o}s, Reza Borhani\'{e} Aggelos K. Katsaggelos,
+\emph{Machine Learning Refined: Foundations, Algorithms, and Applications},
+Northwestern University.
+
+\end{thebibliography}
+
+\end{document}

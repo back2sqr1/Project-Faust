@@ -84,10 +84,38 @@ Setting the gradient above to zero and solving for w gives the system of linear 
 
 The efficacy of the model can be measured by the mean squared error (MSE) of the model:
 
+
+
 \begin{equation}
     \frac{1}{N} \sum_{p=1}^{N} (y_p - w^T x_p)^2
 \end{equation}
 
+However, as many functions are nonlinear, in order to fit a nonlinear function, we can use a nonlinear transformation, 
+we can use an appropriate nonlinear feature transformation to describe nonlinear functions.
+
+
+\problem {Model through a sin wave}
+
+\solution{Sinusoidal Regression}
+One solution to this is to use a sinusoidal transformation. For example, we can use the following transformation:
+
+\begin{equation}
+    b + f(x_p)w = b + sin(2 \pi x_p)w \approx y_p, p = 1, \ldots, P
+\end{equation}
+
+This transforms the feature space to $\{f(x_p), y_p\}^P_{p = 1}$.
+
+\subsection {Computing $\textbf{w}^*$}
+
+$$\argmin_w = \sum_{p = 1}^{P}(f_pw - y_p)^2$$
+
+Deriving the derivative of the above equation gives us the following, setting to zero for the minimum:
+$$2 \sum_{p = 1}^{P}f_p(f_pw - y_p) = 0$$
+$$\sum_{p = 1}^{P}f_pf_pw = \sum_{p = 1}^{P}f_py_p$$
+$$w^* = \left(\sum_{p = 1}^{P}f_pf_p^T\right)^{-1}\sum_{p = 1}^{P}f_py_p$$
+
+
+Left on page 3.2.1
 %\bibliography{mybib}
 \bibliographystyle{alpha}
 

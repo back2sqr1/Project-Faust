@@ -1,7 +1,7 @@
-PWD c:\Users\zhang\OneDrive\Documents\GithubRepos\Project-Faust\MachineLearning\Deep Learning - Isaac Goodfellow\Regression
+PWD c:\Users\zhang\OneDrive\Documents\GithubRepos\Project-Faust\Numerical Linear Algebra\Trefethen-Bau\Fundamentals
 INPUT C:\Users\zhang\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\zhang\OneDrive\Documents\GithubRepos\Project-Faust\MachineLearning\Deep Learning - Isaac Goodfellow\Regression\Chapter3.tex
-OUTPUT Chapter3.log
+INPUT c:\Users\zhang\OneDrive\Documents\GithubRepos\Project-Faust\Numerical Linear Algebra\Trefethen-Bau\Fundamentals\Fundamentals.tex
+OUTPUT Fundamentals.log
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
@@ -176,10 +176,10 @@ INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.d
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.def
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\Chapter3.aux
-INPUT .\Chapter3.aux
-INPUT Chapter3.aux
-OUTPUT Chapter3.aux
+INPUT .\Fundamentals.aux
+INPUT .\Fundamentals.aux
+INPUT Fundamentals.aux
+OUTPUT Fundamentals.aux
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -188,14 +188,14 @@ INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\Chapter3.out
-INPUT .\Chapter3.out
-INPUT Chapter3.out
-INPUT Chapter3.out
-OUTPUT Chapter3.pdf
-INPUT .\Chapter3.out
-INPUT .\Chapter3.out
-OUTPUT Chapter3.out
+INPUT .\Fundamentals.out
+INPUT .\Fundamentals.out
+INPUT Fundamentals.out
+INPUT Fundamentals.out
+OUTPUT Fundamentals.pdf
+INPUT .\Fundamentals.out
+INPUT .\Fundamentals.out
+OUTPUT Fundamentals.out
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1095.tfm
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1095.tfm
@@ -203,7 +203,7 @@ INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmss.fd
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmss.fd
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmss.fd
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmssbx10.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmssbx10.tfm
+INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbi1095.tfm
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -239,25 +239,14 @@ INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
 INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx0800.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx0600.tfm
+INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmssbo10.tfm
 INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmssbx10.tfm
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmssbx10.tfm
-INPUT Chapter3.aux
-INPUT .\Chapter3.out
-INPUT .\Chapter3.out
+INPUT Fundamentals.aux
+INPUT .\Fundamentals.out
+INPUT .\Fundamentals.out
+INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1095.pk
+INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1095.pk
 INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\zhang\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
@@ -270,6 +259,8 @@ INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -280,7 +271,7 @@ INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmssbo10.pfb
+INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmssbo10.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmssbx10.pfb
 INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmssbx10.pfb
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT C:\Users\zhang\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

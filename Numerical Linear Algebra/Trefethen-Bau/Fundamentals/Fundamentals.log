@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.6)  2 MAR 2025 18:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.6)  2 MAR 2025 20:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/zhang/OneDrive/Documents/GithubRepos/Project-Faust/MachineLearning/Deep Learning - Isaac Goodfellow/Regression/Chapter3.tex"
-(c:/Users/zhang/OneDrive/Documents/GithubRepos/Project-Faust/MachineLearning/Deep Learning - Isaac Goodfellow/Regression/Chapter3.tex
+**"c:/Users/zhang/OneDrive/Documents/GithubRepos/Project-Faust/Numerical Linear Algebra/Trefethen-Bau/Fundamentals/Fundamentals.tex"
+(c:/Users/zhang/OneDrive/Documents/GithubRepos/Project-Faust/Numerical Linear Algebra/Trefethen-Bau/Fundamentals/Fundamentals.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -472,8 +472,8 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count338
 \l__pdf_internal_box=\box62
-) (Chapter3.aux)
-\openout1 = `Chapter3.aux'.
+) (Fundamentals.aux)
+\openout1 = `Fundamentals.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
@@ -513,9 +513,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 44.
- (Chapter3.out) (Chapter3.out)
+ (Fundamentals.out) (Fundamentals.out)
 \@outlinefile=\write3
-\openout3 = `Chapter3.out'.
+\openout3 = `Fundamentals.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -529,67 +529,54 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <14> not available
 (Font)              Font shape `T1/lmss/bx/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 53.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 55.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 51.
  (C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
  (C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 55.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 51.
  (C:\Users\zhang\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <14> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 64.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 64.
+
 
 [1
 
 {C:/Users/zhang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 108.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 108.
 
+[2]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 108.
-
-
-
-[2] (Chapter3.aux)
+[3] (Fundamentals.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `Chapter3.out' has not changed.
-(rerunfilecheck)             Checksum: E9855AE2FFC7D6AA2F12F01DA34701E4;550.
+Package rerunfilecheck Info: File `Fundamentals.out' has not changed.
+(rerunfilecheck)             Checksum: FC2B05B44F78FFD545A0A056B0B2EA0E;411.
  ) 
 Here is how much of TeX's memory you used:
- 15620 strings out of 473530
- 246852 string characters out of 5714795
- 655625 words of memory out of 5000000
- 38589 multiletter control sequences out of 15000+600000
- 583281 words of font info for 80 fonts, out of 8000000 for 9000
+ 15615 strings out of 473530
+ 247191 string characters out of 5714795
+ 664637 words of memory out of 5000000
+ 38588 multiletter control sequences out of 15000+600000
+ 573577 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,6n,82p,667b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Chapter3.pdf (2 pages, 159248 bytes).
+ 80i,16n,82p,663b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\zhang\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/zhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on Fundamentals.pdf (3 pages, 199604 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
+ 260 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -154,7 +154,37 @@ Otherwise, this is the
 
 where $p$ and $q$ are conjugate exponents (i.e. $\frac{1}{p} + \frac{1}{q} = 1$). Other than $p=q$, this is possible for any $p>1$ (e.g. $p=3, q=\tfrac{3}{2}$).
 
+\section{Singular Value Decomposition}
 
+If you don't know what to do, take the SVD
+
+\begin{align*}
+  A = U \Sigma V^*
+\end{align*}
+
+The left singular values U represent the length of the semiaxises of an ellipsoid, 
+where the right singular values V the preimages of the principal semiaxes.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{SVD_Circle.png}
+  \caption{SVD Circle Illustration}
+  \label{fig:svd-circle}
+\end{figure}
+
+\section{More on SVD}
+
+\definition{Nondefective Matrix}
+
+A matrix is nondefective if it has a full set of eigenvectors.
+
+\begin{theorem}
+  Matrix A can be made as the sum of r rank-one matrices
+  \begin{align*}
+    A = \sum_{i=1}^r \sigma_i u_i v_i^*
+  \end{align*}
+\end{theorem}
+The partial sums of the SVD are the best rank-r approximation to A. (the best energy)
 
 %\bibliography{mybib}
 \bibliographystyle{alpha}
@@ -162,9 +192,10 @@ where $p$ and $q$ are conjugate exponents (i.e. $\frac{1}{p} + \frac{1}{q} = 1$)
 \begin{thebibliography}{77}
 
 \bibitem{fks}
-Lloyd N. Trefethen\'{o}s, David Bau\'{e},
+Lloyd N. Trefethen, David Bau III,
 \emph{Numerical Linear Algebra},
 Northwestern University.
+
 
 \end{thebibliography}
 
